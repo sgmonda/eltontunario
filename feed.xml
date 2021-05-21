@@ -1,0 +1,60 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss 
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+  xmlns:googleplay="https://www.google.com/schemas/play-podcasts/1.0" 
+  xmlns:atom="https://www.w3.org/2005/Atom" 
+  xmlns:media="https://search.yahoo.com/mrss" 
+  version="2.0" 
+  xml:lang="es-es"
+>
+  <channel>
+
+    <title>{{ site.title }}</title>
+    <link>{{ site.url }}</link>
+    <description>{{ site.description }}</description>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+
+    <image>
+      <title>{{ site.title }}</title>
+      <url>{{ site.url }}{{ site.album_art }}</url>
+      <link>{{ site.url }}</link>
+    </image>
+
+    <language>es-ES</language>
+
+    <itunes:author>{{ site.owner.name }}</itunes:author>
+    <itunes:owner>
+      <itunes:name>{{ site.owner.name }}</itunes:name>
+      <itunes:email>{{ site.owner.email }}</itunes:email>
+    </itunes:owner>
+    <itunes:subtitle>{{ site.description }}</itunes:subtitle>
+    <itunes:summary>{{ site.description }}</itunes:summary>
+    <itunes:image href="{{ site.url }}{{ site.album_art }}" />
+    <itunes:explicit>{{ site.explicit }}</itunes:explicit>
+    <itunes:category text="{{ site.category | escape }}"/>
+    
+    {% for ep in site.posts %}
+      <item>
+        <itunes:episode>{{ ep.episode }}</itunes:episode>
+        <itunes:season>{{ ep.season }}</itunes:season>
+        <title>{{ ep.title }}</title>
+        <description>
+          <![CDATA[{{ ep.description | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
+        </description>
+        <guid>{{ site.url }}{{ ep.mp3 }}</guid>
+        <enclosure url="{{ ep.mp3 }}" length="{{ ep.length }}" type="audio/mpeg" />
+        <pubDate>{{ ep.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
+        <itunes:duration>{{ ep.duration }}</itunes:duration>
+        <itunes:summary>
+          <![CDATA[{{ ep.description | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
+        </itunes:summary>
+        <itunes:image href="{{ site.url }}{{ site.album_art }}" />
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

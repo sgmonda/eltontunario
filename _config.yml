@@ -1,0 +1,16 @@
+title: El Tontunario
+owner:
+  name: Captur.as
+  email: info@captur.as
+explicit: no
+category: "Society & Culture"
+album_art: /img/album-art.png
+description: Dos amigos charlando, sin más ambición que pasar un rato entretenido.
+baseurl: ""
+url: https://eltontunario.com
+twitter_username: jekyllrb
+github_username: jekyll
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal

@@ -1,0 +1,19 @@
+{
+  "name": "eltontunario",
+  "version": "1.0.0",
+  "description": "This is the home page repository and podcast hosting for *El Tontunario*.",
+  "scripts": {
+    "install": "bundle install",
+    "dev": "bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgmonda/eltontunario.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgmonda/eltontunario/issues"
+  },
+  "homepage": "https://github.com/sgmonda/eltontunario#readme"
+}
