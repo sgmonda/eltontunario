@@ -37,6 +37,7 @@ layout: null
     <itunes:explicit>{{ site.explicit }}</itunes:explicit>
     <itunes:keywords>{{ site.keywords | escape }}</itunes:keywords>
     <itunes:category text="{{ site.category | escape }}"/>
+    <copyright>&#xA9; 2021 Captur.as</copyright>
     
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
 
