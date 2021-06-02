@@ -10,8 +10,10 @@ album_art: /img/album-art.jpg
 description: Dos amigos charlando, sin más ambición que pasar un rato entretenido.
 baseurl: ""
 url: https://www.eltontunario.com
+twitter:
+  username: eltontunario
+  card: /img/album-art.jpg
 
-twitter_username: eltontunario
 youtube_url: https://www.youtube.com/channel/UCAKGUK0AWi-p6wqoweU7saQ
 spotify_url: https://open.spotify.com/show/1l1X7Dkq35K0GTn3jfGoBw
 ivoox_url: https://www.ivoox.com/podcast-tontunario_sq_f11282275_1.html
