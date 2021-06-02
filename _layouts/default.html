@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- SEO/social tags are added automatically by jekyll-seo-tag plugin -->
+    {% seo %}
+
+    <title>{{ page.title }}</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,700&family=Roboto:ital,wght@0,300;0,500;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">{{ content }}</div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

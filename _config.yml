@@ -11,6 +11,9 @@ description: Dos amigos charlando, sin más ambición que pasar un rato entreten
 baseurl: ""
 url: https://www.eltontunario.com
 
+twitter_username: eltontunario
+youtube_url: https://www.youtube.com/channel/UCAKGUK0AWi-p6wqoweU7saQ
+
 # Build settings (do not modify)
 markdown: kramdown
 theme: jekyll-theme-minimal
