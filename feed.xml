@@ -49,7 +49,7 @@ layout: null
           <![CDATA[{{ ep.description | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
         </description>
         <guid>{{ site.url }}{{ ep.mp3 }}</guid>
-        <enclosure url="{{ ep.mp3 }}" length="{{ ep.length }}" type="audio/mpeg" />
+        <enclosure url="{{ site.url }}{{ ep.mp3 }}" length="{{ ep.length }}" type="audio/mpeg" />
         <pubDate>{{ ep.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
         <itunes:duration>{{ ep.duration }}</itunes:duration>
         <itunes:summary>
