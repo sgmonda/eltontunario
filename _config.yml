@@ -22,3 +22,4 @@ apple_url: https://podcasts.apple.com/us/podcast/el-tontunario/id1570425273
 # Build settings (do not modify)
 markdown: kramdown
 theme: jekyll-theme-minimal
+future: false # Hide future posts
