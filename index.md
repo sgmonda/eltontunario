@@ -12,14 +12,14 @@ image: /img/album-art.jpg
   {% for ep in site.posts %}
     <div>
       <p>
-        {{ ep.title }}
+        <a href="{{ ep.mp3 }}" target="_blank">{{ ep.title }}</a>
       </p>
-      <audio controls>
+      <!-- <audio controls>
         <source src="{{ ep.mp3 }}" type="audio/ogg">
-      </audio>
-      <p class="is-size-7">
+      </audio> -->
+      <!-- <p class="is-size-7">
         <a href="{{ ep.mp3 }}" target="_blank">Descargar</a>
-      </p>
+      </p> -->
       <hr/>
     </div>
   {% endfor %}
