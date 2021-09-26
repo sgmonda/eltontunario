@@ -12,6 +12,7 @@ image: /img/album-art.jpg
   {% for ep in site.posts %}
     <div>
       <p>
+        <small style="color: #aaa">{{ ep.date | date: "%d %b %Y" }}</small><br/>
         <a href="{{ ep.mp3 }}" target="_blank">{{ ep.title }}</a>
       </p>
       <!-- <audio controls>
