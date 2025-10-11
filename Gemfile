@@ -31,3 +31,17 @@ gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
 # kramdown v1, comment out this line.
 gem "kramdown-parser-gfm"
 
+# Necesarios en Ruby 3.4+
+gem "csv", "~> 3.3"
+gem "logger", "~> 1.6"
+
+# Jekyll 3.x en Ruby 3 necesita webrick para `jekyll serve`
+gem "webrick", "~> 1.8"
+
+# Ruby 3.4+ ya no trae estos por defecto
+gem "base64", "~> 0.2"
+
+# stdlib que ya no es default en Ruby 3.4+
+gem "bigdecimal", "~> 3.1"
+
+gem "liquid", ">= 4.0.4", "< 5.0"
