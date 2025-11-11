@@ -3,7 +3,6 @@ _site
 .jekyll-metadata
 .DS_Store
 *~
-templates
 projects
 trash
 mp4
