@@ -14,3 +14,7 @@ Clone this repository and ensure you meet the following requirements:
 ## Adding posts
 
 Add new posts in the `_posts` folder. Use the existing posts as a reference for the required front matter and structure.
+
+## Automatic refresh
+
+To be completed
