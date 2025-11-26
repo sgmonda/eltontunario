@@ -17,4 +17,4 @@ Add new posts in the `_posts` folder. Use the existing posts as a reference for 
 
 ## Automatic refresh
 
-To be completed
+To be completed!
